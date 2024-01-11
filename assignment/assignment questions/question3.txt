@@ -1,0 +1,23 @@
+package Assignment;
+
+import java.util.Scanner;
+
+public class question3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number: ");
+        int a = sc.nextInt();
+        System.out.println("Enter Second number: ");
+        int b = sc.nextInt();
+        int c = Math.min(a,b);
+        while (c>0){
+            if (a%c==0 && b%c==0){
+                break;
+            }
+            c--;
+        }
+        System.out.println(c);
+
+
+    }
+}
